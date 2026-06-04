@@ -119,7 +119,7 @@ try:
                 print(f"📍 거북목 상태 유지 시간: {duration:.1f}초")
 
                 if duration >= TURTLE_DURATION:
-                    print("✅ 1초 이상 지속 → 모터 제어 실행")
+                    print("✅ 5초 이상 지속 → 모터 제어 실행")
                     if current_angle150 != reversed_angle150:
                         current_angle150 = move_servo_smooth(motor150_channel, current_angle150, reversed_angle150)
                     else:
